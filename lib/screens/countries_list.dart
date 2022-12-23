@@ -13,15 +13,8 @@ class CountriesList extends StatefulWidget {
 }
 
 class _CountriesListState extends State<CountriesList>
-    with TickerProviderStateMixin {
-  late final AnimationController _controller =
-      AnimationController(duration: const Duration(seconds: 3), vsync: this)
-        ..repeat();
-  @override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
-  }
+  {
+ 
 
   TextEditingController searchController = TextEditingController();
   @override
